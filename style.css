@@ -33,16 +33,39 @@ body {
   text-decoration: underline;
 }
 
-/* Tables */
-table {
-  width: 100%;
-  margin-top: 20px;
+.home-container {
+  display: flex;
+  gap: 20px; 
 }
 
-td {
+/* Home Page */
+.home-container {
+  display: flex;
+  gap: 30px;
   padding: 20px;
-  vertical-align: top;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+.right-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.big-photo {
+  width: 200px;        
+  height: auto;        
+  border: 3px solid #f4c2c2;
+  border-radius: 10px;
+}
+
+.circle-img.big-photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
 
 /* Left column: Grid Layout */
 .grid-layout {
@@ -234,7 +257,6 @@ img {
   border-radius: 10px;
   cursor: pointer;
 }
-
 .gallery-img img {
   width: 100%;
   height: 100%;
@@ -336,13 +358,15 @@ button:hover {
 
 
 /*----- Message/Form Page -----*/
-
 .form-container {
   background-color: #fff0f3;
-  padding: 30px;
+  padding: 40px;
   max-width: 500px;
   margin: 40px auto;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .form-container h2 {
